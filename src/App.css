@@ -1,0 +1,161 @@
+body, #root {
+  background-color: whitesmoke;
+  margin: auto;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+}
+
+Link:hover {
+  text-decoration: none;
+}
+
+.card-body {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+  margin-bottom: 12px;
+  border-radius: 10px;
+  transition: all .4s;
+  background-color: white;
+  height: 135px;
+  overflow: hidden;
+}
+
+.column {
+  float: left;
+  width: auto;
+  vertical-align: top;
+  padding-right: 15px;
+}
+
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card-body:hover {
+  opacity: 100%;
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  background-color: white;
+  color: black;
+  height: 170px;
+}
+
+.card-body-large {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+  margin-bottom: 12px;
+  border-radius: 10px;
+  padding: 20px;
+  transition: all .4s;
+  background-color: white;
+  height: 255px;
+  overflow: hidden;
+}
+
+.card-body-large:hover {
+  opacity: 100%;
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  background-color: white;
+  color: black;
+  height: 290px;
+}
+
+.page {
+  width: 580px;
+  margin: auto;
+  padding: 0%;
+}
+
+.page:hover .card-body:not(:hover) {
+  opacity: .4;
+  transition: all .4s;
+}
+
+.page:hover .card-body-large:not(:hover) {
+  opacity: .4;
+  transition: all .4s;
+}
+
+.page-item .page-link {
+  color: #383c44;
+}
+
+.home {
+  margin: auto;
+  height: 460px;
+  width: 800px;
+  padding: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-image: url("https://hdqwalls.com/download/minimalist-blue-mountains-8k-2x-5120x2880.jpg");
+  background-position: center;
+  background-size: cover;
+  backdrop-filter: blur(8px);
+}
+
+.home #temp {
+  font-size: 75px;
+  font-weight: bold;
+}
+
+.home #loc {
+  font-size: 32px;
+  display: inline-block;
+}
+
+.home #date {
+  font-size: 20px;
+}
+
+.home #cond {
+  font-size: 24px;
+  font-weight: bold;
+  font-style: italic;
+  display: inline-block;
+}
+
+.home #minmax {
+  font-size: 20px;
+} 
+
+.summary-card, .detailed-card {
+  color: unset;
+}
+
+.summary-card:hover, .detailed-card:hover {
+  text-decoration: unset;
+}
+
+.expand-info {
+  font-size: small;
+  opacity: 0;
+  display: none;
+  color: grey;
+  font-style: italic;
+  transition: all .2s;
+}
+
+.summary-card:hover .expand-info, .detailed-card:hover .collapse-info {
+  opacity: 1;
+  display: block;
+
+  transition: opacity 0.2s;
+}
+
+.collapse-info {
+  font-size: small;
+  opacity: 0;
+  display: none;
+  color: grey;
+  font-style: italic;
+  transition: all .2s;
+}
+
+.history {
+  margin: auto; 
+  font-family:inherit; 
+  text-align: center;
+  color: #383c44;
+}
