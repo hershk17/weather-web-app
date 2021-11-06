@@ -60,7 +60,7 @@ export default class Home extends React.Component {
 
         foundCities = foundCities.substr(0, foundCities.length-1)
 
-        fetch(`https://api.openweathermap.org/data/2.5/group?id=${foundCities}&cnt=50&units=metric&appid=3cfba60ea5c89eb0716b89f4e1fdb797`)
+        fetch(`https://api.openweathermap.org/data/2.5/group?id=${foundCities}&cnt=50&units=metric&appid=<<app_id>>`)
         .then((res) => {
             if(res.status == 404) {
                 throw "City not found."
