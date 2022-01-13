@@ -254,7 +254,6 @@ export default class Home extends React.Component {
               <br />
               <br />
             </div>
-<<<<<<< HEAD
           )
         ) : (
           <div>
@@ -299,8 +298,4 @@ export default class Home extends React.Component {
       </div>
     );
   }
-=======
-        )
-    }
->>>>>>> 61d0c78a183829916e0f8ac549e3ba5759af1ebc
 }
